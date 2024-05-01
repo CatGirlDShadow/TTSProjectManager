@@ -1,3 +1,10 @@
+ScriptExample.json
+ProjectExample/
+TestLoad/
+Build/
+.vscode/
+TODO
+
 # Logs
 logs
 *.log

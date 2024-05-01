@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.12.7"
+  },
+  "name": "tts-project-manager",
+  "description": "Update (risky)\r https://steamapi.xpaw.me/#IPublishedFileService/Update",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "undici-types": "^5.26.5"
+  },
+  "scripts": {
+    "test": "node ./Build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CatGirlDShadow/TTSProjectManager.git"
+  },
+  "keywords": [
+    "TTS",
+    "Board",
+    "Games",
+    "Tabletop",
+    "Simulator"
+  ],
+  "author": "CatGirlDShadow",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/CatGirlDShadow/TTSProjectManager/issues"
+  },
+  "homepage": "https://github.com/CatGirlDShadow/TTSProjectManager#readme"
+}
