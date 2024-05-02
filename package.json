@@ -10,7 +10,9 @@
     "undici-types": "^5.26.5"
   },
   "scripts": {
-    "test": "node ./Build/index.js"
+    "testLoad": "node ./Build/testLoad.js",
+    "testBuild": "node ./Build/testBuild.js",
+    "jsonDiff": "node ./Build/jsonDiff.js"
   },
   "repository": {
     "type": "git",

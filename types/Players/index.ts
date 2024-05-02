@@ -1,9 +1,4 @@
-import { CameraState } from "./CameraState"
-import { Hands } from "./Hands"
-import { Player } from "./Player"
-
-export type Players = {
-    TabStates: Map<string, Player>,
-    Hands: Hands,
-    CameraStates: Array<CameraState>
-}
+export * from "./CameraState"
+export * from "./Hands"
+export * from "./Player"
+export * from "./Players"

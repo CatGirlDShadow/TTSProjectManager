@@ -1,11 +1,5 @@
-import { GameObject } from "./GameObject"
-
-export type GlobalScripts = {
-    LuaScript: string,
-    LuaScriptState: string,
-    XmlUI: string
-}
-
-export type ObjectStates = {
-    ObjectStates: Array<GameObject>
-}
+export * from "./GameFieldName"
+export * from "./GameObject"
+export * from "./Scripts"
+export * from "./ObjectStates"
+export * from "./ScriptFieldInfo"

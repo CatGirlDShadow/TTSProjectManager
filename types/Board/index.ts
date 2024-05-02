@@ -1,17 +1,7 @@
-import { ComponentTags } from "./ComponentTags"
-import { Decal } from "./Decal"
-import { DecalInfo } from "./DecalInfo"
-import { Turns } from "./Turns"
-
-export type Board = {
-    Gravity: number,
-    PlayArea: number,
-    Table: string,
-    TableURL: string,
-    Sky: string,
-    SkyURL: string,
-    ComponentTags: ComponentTags,
-    Turns: Turns,
-    DecalPallet: Array<DecalInfo>,
-    Decals: Array<Decal>
-}
+export * from "./Board"
+export * from "./ComponentTags"
+export * from "./Decal"
+export * from "./DecalInfo"
+export * from "./Label"
+export * from "./Turns"
+export * from "./SnapPoint"
