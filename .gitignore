@@ -1,10 +1,7 @@
-ScriptExample.json
-ProjectExample/
-TestLoad/
-Build/
+Test/
+dist/
+!dist/*.exe
 .vscode/
-TODO
-TestBuild/
 
 # Logs
 logs
