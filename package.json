@@ -1,34 +1,33 @@
 {
-  "devDependencies": {
-    "@types/node": "^20.12.7"
-  },
-  "name": "tts-project-manager",
-  "description": "Update (risky)\r https://steamapi.xpaw.me/#IPublishedFileService/Update",
+  "name": "projectmanager",
   "version": "1.0.0",
-  "main": "index.ts",
-  "dependencies": {
-    "undici-types": "^5.26.5"
+  "description": "",
+  "main": "dist/build/index.js",
+  "bin": {
+    "ttspm": "./dist/build/index.js"
+  },
+  "pkg": {
+    "scripts": "dist/build/**/*",
+    "assets": "node_modules",
+    "outputPath": "dist",
+    "targets": [
+      "node18-windows-x64"
+    ]
   },
   "scripts": {
-    "testLoad": "node ./Build/testLoad.js",
-    "testBuild": "node ./Build/testBuild.js",
-    "jsonDiff": "node ./Build/jsonDiff.js"
+    "build": "npx tsc && pkg .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CatGirlDShadow/TTSProjectManager.git"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "figlet": "^1.7.0"
   },
-  "keywords": [
-    "TTS",
-    "Board",
-    "Games",
-    "Tabletop",
-    "Simulator"
-  ],
-  "author": "CatGirlDShadow",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/CatGirlDShadow/TTSProjectManager/issues"
-  },
-  "homepage": "https://github.com/CatGirlDShadow/TTSProjectManager#readme"
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^20.12.11",
+    "typescript": "^5.4.5"
+  }
 }
