@@ -10,7 +10,7 @@ export const timeFormat = new Intl.DateTimeFormat('US', { year: 'numeric', month
 hour: '2-digit',minute: '2-digit', second: '2-digit' });
 export const scriptFilesInfo: Array<ScriptFieldInfo> = [
     {
-        filename: "global.lua",
+        filename: "script.lua",
         field: "LuaScript"
     },
     {
