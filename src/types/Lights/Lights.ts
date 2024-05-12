@@ -1,4 +1,4 @@
-import { Lighting } from "./Lighting"
+import { Lighting } from "@types"
 
 export interface Lights {
     Lighting: Lighting

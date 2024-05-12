@@ -1,4 +1,4 @@
-import { Transform } from "../General"
+import { Transform } from "@types"
 
 export interface SnapPoint {
     Position: Transform,

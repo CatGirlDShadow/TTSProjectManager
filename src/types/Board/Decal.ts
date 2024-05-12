@@ -1,5 +1,4 @@
-import { Transform } from "../General/Transform";
-import { DecalInfo } from "./DecalInfo"
+import { DecalInfo, Transform } from "@types";
 
 export interface Decal {
     Transform: Transform;

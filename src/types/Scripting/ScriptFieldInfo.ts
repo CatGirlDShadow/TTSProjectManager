@@ -1,4 +1,4 @@
-import { GameFieldName } from "./GameFieldName"
+import { GameFieldName } from "@types"
 
 export interface ScriptFieldInfo {
     filename: string,

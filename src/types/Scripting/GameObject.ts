@@ -1,6 +1,4 @@
-import { Color } from "../General/Color"
-import { Transform } from "../General/Transform"
-import { Vector } from "../General/Vector"
+import { Color, Transform, Vector } from "@types"
 
 export interface GameObject {
     GUID: string,

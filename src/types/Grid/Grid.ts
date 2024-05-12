@@ -1,4 +1,4 @@
-import { GridSettings } from "./GridSettings"
+import { GridSettings } from "@types"
 
 export interface Grid {
     Grid: GridSettings

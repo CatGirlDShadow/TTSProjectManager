@@ -1,10 +1,9 @@
+import { GameFieldName, GameObject, LooseObject, Scripts } from "@types";
+import { GetCorrectDirName, sanitizeFilename, scriptFilesInfo, TTS_JSON_INTENT } from "@utils";
 import { existsSync, mkdirSync, writeFileSync } from "fs";
-import { ConstantInfo, GameFieldName, GameObject, LooseObject, Scripts } from "../types";
 import { join } from "path";
-import { scriptFilesInfo, TTS_JSON_INTENT } from "./constants";
-import { GetCorrectDirName, sanitizeFilename } from "./File";
 
-export function RecursiveObjectResolve(rootPath: string, ObjectStates: Array < GameObject >) {
+export function RecursiveObjectResolve(rootPath: string, ObjectStates: Array<GameObject>) {
     if (!existsSync(rootPath)) {
         mkdirSync(rootPath);
     }
@@ -13,11 +12,11 @@ export function RecursiveObjectResolve(rootPath: string, ObjectStates: Array < G
         if (dirName.trim() == "") dirName = obj.Name;
         dirName += ` (${obj.GUID})`;
         const objPath = GetCorrectDirName(join(rootPath, dirName));
-        if (!existsSync(objPath)){
+        if (!existsSync(objPath)) {
             mkdirSync(objPath);
         }
         const jsonPath = join(objPath, "object.json");
-        for (const info of scriptFilesInfo){
+        for (const info of scriptFilesInfo) {
             ExtractFieldToFile(obj, info.field, join(objPath, info.filename));
         }
         if (!!obj.ContainedObjects && obj.ContainedObjects.length) {
@@ -28,7 +27,7 @@ export function RecursiveObjectResolve(rootPath: string, ObjectStates: Array < G
     }
 }
 
-export function ExtractFieldToFile(obj: Scripts, fieldName: GameFieldName, filePath: string){
+export function ExtractFieldToFile(obj: Scripts, fieldName: GameFieldName, filePath: string) {
     if (!Object.hasOwn(obj, fieldName)) return;
     if (obj[fieldName]!.trim() != "") {
         writeFileSync(filePath, obj[fieldName]!);
@@ -36,6 +35,6 @@ export function ExtractFieldToFile(obj: Scripts, fieldName: GameFieldName, fileP
     delete obj[fieldName];
 }
 
-export function StringifyCheckConstants(obj: LooseObject){
-    return JSON.stringify(obj, null, TTS_JSON_INTENT).replace(/\"(\{\{\%[a-zA-Z0-9]+\%\}\})\"/gm, (match, group1)=>group1);
+export function StringifyCheckConstants(obj: LooseObject) {
+    return JSON.stringify(obj, null, TTS_JSON_INTENT).replace(/\"(\{\{\%[a-zA-Z0-9]+\%\}\})\"/gm, (match, group1) => group1);
 }

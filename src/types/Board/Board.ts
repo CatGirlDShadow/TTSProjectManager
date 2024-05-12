@@ -1,9 +1,4 @@
-import { ComponentTags } from "./ComponentTags"
-import { Decal } from "./Decal"
-import { DecalInfo } from "./DecalInfo"
-import { SnapPoint } from "./SnapPoint"
-import { Turns } from "./Turns"
-import { VectorLineState } from "./VectorLineState"
+import { ComponentTags, Decal, DecalInfo, SnapPoint, Turns, VectorLineState } from "@types"
 
 export interface Board {
     Gravity: number,

@@ -1,7 +1,5 @@
 
-import { CameraState } from "./CameraState"
-import { Hands } from "./Hands"
-import { Player } from "./Player"
+import { CameraState, Hands, Player } from "@types"
 
 export interface Players {
     TabStates: Map<string, Player>,

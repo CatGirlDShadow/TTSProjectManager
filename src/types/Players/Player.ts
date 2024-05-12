@@ -1,4 +1,4 @@
-import { Color } from "../General/Color"
+import { Color } from "@types"
 
 export interface Player {
     title: string,

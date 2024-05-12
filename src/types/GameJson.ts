@@ -1,12 +1,5 @@
-import { Board } from "./Board";
-import { LooseObject } from "./General";
-import { Grid } from "./Grid";
-import { Lights } from "./Lights";
-import { Main } from "./main";
-import { Music } from "./Music";
-import { Players } from "./Players";
-import { Scripts, ObjectStates } from "./Scripting";
+import { Board, Grid, Lights, LooseObject, Main, Music, ObjectStates, Players, Scripts } from "@types";
 
-export interface GameJson extends LooseObject, Main, Grid, Players, Music, Lights, Board, Scripts, ObjectStates{
-    
+export interface GameJson extends LooseObject, Main, Grid, Players, Music, Lights, Board, Scripts, ObjectStates {
+
 }

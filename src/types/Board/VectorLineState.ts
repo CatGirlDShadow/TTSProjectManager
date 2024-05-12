@@ -1,4 +1,4 @@
-import { Color, Vector } from "../General";
+import { Color, Vector } from "@types";
 
 export interface VectorLineState {
     points3: Array<Vector>,

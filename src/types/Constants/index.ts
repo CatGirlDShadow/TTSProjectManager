@@ -1,1 +1,1 @@
-export * from "./ConstantInfo"
+export * from "./ConstantInfo";
